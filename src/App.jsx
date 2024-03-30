@@ -5,25 +5,32 @@ import { BsGithub } from "react-icons/bs";
 import { BsLinkedin } from "react-icons/bs";
 import { BsTwitter } from "react-icons/bs";
 import { SiFrontendmentor } from "react-icons/si";
+import desktopDeveloperImg from "../assets/images/image-profile-desktop.webp";
+import tabletDeveloperImg from "../assets/images/image-profile-tablet.webp";
+import mobileDeveloperImg from "../assets/images/image-profile-mobile.webp";
+import rings from "../assets/images/pattern-rings.svg";
+import circle from "../assets/images/pattern-circle.svg";
+
+import { projects, learn_technologies } from "./data/data";
 
 export default function App() {
   const [darkMode, setDarkMode] = useState(true);
-  
-  {/*Theme Toggle icons*/}
-let themeToggleIcon = <BsMoonFill className="text-xl" />
 
+  {
+    /*Theme Toggle icons*/
+  }
+  let themeToggleIcon = <BsMoonFill className="text-xl" />;
 
   if (darkMode) {
-    themeToggleIcon = <HiOutlineSun className="text-xl" />
-
-;
+    themeToggleIcon = <HiOutlineSun className="text-xl" />;
   }
   return (
     <main className={darkMode ? "dark" : ""}>
-      <section className="dark:bg-custom-dark bg-custom-gray">
+      {/*Navbar Section*/}
+      <section className="dark:bg-custom-dark">
         <nav className="container">
-          <div className="flex md:flex-row flex-col max-sm:space-y-5 items-center py-5 justify-between text-custom-dark dark:text-white">
-            <div className="capitalize font-bold text-3xl ">Abbas Sher</div>
+          <div className="relative z-50 flex flex-col  items-center justify-between py-5 text-custom-dark dark:text-white max-sm:space-y-5 md:flex-row">
+            <div className="text-3xl font-bold capitalize ">Abbas Sher</div>
             <div className="flex items-center">
               <button onClick={() => setDarkMode(!darkMode)} className="mr-10">
                 {themeToggleIcon}
@@ -54,6 +61,90 @@ let themeToggleIcon = <BsMoonFill className="text-xl" />
           </div>
         </nav>
       </section>
+      {/* Hero Section*/}
+      <section className="relative dark:bg-custom-dark dark:text-white">
+        <div className="container max-sm:overflow-hidden md:py-24">
+          <div className="flex flex-col-reverse items-center justify-center gap-3 md:flex-row">
+            <div className="md:w-2/3">
+              <h1 className="heading-xl relative z-40 capitalize">
+                nice to meet you!
+                <br />
+                i’m <span className="relative after:absolute after:left-0 after:top-full after:h-1 after:w-full after:bg-custom-green after:content-['']">abbas sher.</span>
+              </h1>
+              <p className="my-6 max-w-lg text-center dark:text-custom-gray md:my-12 md:text-left xl:my-16">Based in Pakistan, I’m a front-end developer passionate about building accessible web apps that users love.</p>
+
+              <a href="#contact_form" className="mx-auto block w-fit border-b-2 border-custom-green pb-2 text-center hover:cursor-pointer hover:text-custom-green md:mx-0">
+                Contact me
+              </a>
+            </div>
+            <div className="relative md:w-1/3">
+              <img src={desktopDeveloperImg} className="hidden h-96 md:absolute md:-left-28 md:-top-96 lg:block lg:h-[600px]" alt="Developer image" />
+              <img src={tabletDeveloperImg} className="hidden h-96 md:max-lg:block lg:h-[600px]" alt="Developer image" />
+              <img src={mobileDeveloperImg} className="hidden h-96 max-md:block lg:h-[600px]" alt="Developer image" />
+              <img src={circle} className="absolute left-72 top-2/3 -translate-x-1/2 md:left-0 md:top-64 lg:-left-28 lg:top-16" alt="Developer image" />
+            </div>
+          </div>
+          <hr className="mt-12 dark:bg-white md:mt-20" />
+        </div>
+        <img src={rings} className="absolute top-20 h-16 w-48 md:-left-16 md:h-24 md:w-72" alt="Ring image" />
+      </section>
+      {/* Skills Section*/}
+      <section className="relative overflow-hidden dark:bg-custom-dark dark:text-white">
+        <div className="container py-12 md:py-4">
+          <div className="grid gap-8 md:grid-cols-2 md:gap-14 lg:grid-cols-3">
+            {learn_technologies.map((tech) => (
+              <>
+                <div className="flex flex-col items-center md:items-start" key={tech.id}>
+                  <h2 className="heading-l uppercase">{tech.title}</h2>
+                  <p className="mt-3 dark:text-custom-gray">{tech.experience}</p>
+                </div>
+              </>
+            ))}
+          </div>
+        </div>
+        <img src={rings} className="absolute -right-20 top-3/4 h-16 w-48 md:top-40 md:h-24 md:w-72" alt="Ring image" />
+      </section>
+      {/* Projects Section*/}
+      <section className="dark:bg-custom-dark dark:text-white">
+        <div className="container py-12 md:py-28">
+          <div className="flex items-end justify-between">
+            <h3 className="heading-xl capitalize">projects</h3>
+            <a href="#contact_form" className="w-fit border-b-2 border-custom-green hover:cursor-pointer hover:text-custom-green md:mx-0">
+              Contact me
+            </a>
+          </div>
+          {/* Projects Cards*/}
+          <div className="mt-10 grid gap-20 md:mt-16 md:grid-cols-2">
+            {projects.map((project) => (
+              <>
+                <div className="single-project flex flex-col">
+                  <div className="project-image group relative overflow-hidden border border-custom-gray dark:border-white">
+                    <img src={project.desktopImage} className="hidden h-80 w-full object-cover transition-all duration-500 group-hover:scale-125 md:block" alt="Project image" />
+                    <img src={project.mobImage} className="block w-full object-cover transition-all duration-500 group-hover:scale-125 md:hidden" alt="Project image" />
+                    <div className="absolute left-0 top-0 flex h-full w-full flex-col items-center justify-center space-y-10 bg-black  opacity-0 transition-all duration-500 group-hover:cursor-pointer group-hover:opacity-75">
+                      <a href={project.liveSite} target="_blank" className="border-b-2 border-custom-green pb-2 uppercase  text-white hover:cursor-pointer hover:text-custom-green">
+                        view project
+                      </a>
+                      <a href={project.github} target="_blank" className="border-b-2 border-custom-green pb-2 uppercase  text-white hover:cursor-pointer hover:text-custom-green">
+                        view Code
+                      </a>
+                    </div>
+                  </div>
+                  <div className="project-name heading-md mt-5 uppercase">{project.title}</div>
+                  <div className="project-technolgies mt-3 uppercase">
+                    {project.technologies.map((technology) => (
+                      <span className="me-3" key={technology}>
+                        {technology}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </>
+            ))}
+          </div>
+        </div>
+      </section>
+      {/* Projects Section*/}
     </main>
   );
 }

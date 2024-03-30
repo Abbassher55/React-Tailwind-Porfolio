@@ -6,8 +6,9 @@ export default {
     container: {
       center: true,
       padding: {
-        DEFAULT: "4rem",
+        DEFAULT: "2rem",
         sm: "2rem",
+        md: "6rem",
         lg: "4rem",
         xl: "5rem",
         "2xl": "6rem",
@@ -20,9 +21,9 @@ export default {
         "custom-green": "#4EE1A0",
         "custom-gray": "#d9d9d9",
       },
-      fontFamily:{
-        grotesk:["Space Grotesk", "sans-serif"],
-      }
+      fontFamily: {
+        grotesk: ["Space Grotesk", "sans-serif"],
+      },
     },
   },
   plugins: [],

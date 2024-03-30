@@ -1,12 +1,45 @@
-@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Space+Grotesk:wght@300..700&display=swap');
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("../assets/fonts/SpaceGrotesk-VariableFont_wght.ttf");
+}
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
-@layer base{
-     body{
-        @apply font-grotesk font-medium
+@layer base {
+  body {
+    @apply font-grotesk font-medium;
+  }
+  .heading-xl {
+    @apply font-grotesk text-8xl font-bold;
+  }
+  .heading-l {
+    @apply font-grotesk text-5xl font-bold;
+  }
+  .heading-md {
+    @apply font-grotesk text-2xl font-bold;
+  }
+  @media (max-width: 1024px) {
+    .heading-xl {
+      @apply font-grotesk text-6xl font-bold;
     }
+    .heading-l {
+      @apply font-grotesk text-4xl font-bold;
+    }
+  }
+  @media (max-width: 992px) {
+    .heading-xl {
+      @apply font-grotesk text-4xl font-bold;
+    }
+    .heading-l {
+      @apply font-grotesk text-3xl font-bold;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .heading-xl {
+      @apply text-center font-grotesk text-2xl font-bold;
+    }
+  }
 }

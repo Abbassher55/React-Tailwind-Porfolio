@@ -140,7 +140,30 @@ export default function App() {
           </div>
         </div>
       </section>
-      {/* Projects Section*/}
+      {/* Contact Section*/}
+      <section className="relative dark:bg-custom-dark dark:text-white">
+        <div className="container py-12 md:py-28">
+          <div className="flex flex-col items-start gap-4 md:flex-row">
+            <div className="md:w-1/2">
+              <h3 className="heading-xl capitalize">contact</h3>
+              <p className="mt-5 max-w-md text-custom-gray md:mt-9">I would love to hear about your project and how I could help. Please fill in the form, and I’ll get back to you as soon as possible.</p>
+            </div>
+            <div className="md:w-1/2">
+              <form className="flex flex-col items-center md:items-end">
+                <input type="text" className="w-full border-b border-custom-gray bg-transparent p-4 focus:border-b-custom-green focus:outline-none md:w-9/12" placeholder="Name" required />
+                <input type="email" className="mt-8 w-full border-b border-custom-gray bg-transparent p-4 focus:border-b-custom-green focus:outline-none md:w-9/12" placeholder="Email" required />
+                <textarea className="mt-8 w-full border-b border-custom-gray bg-transparent p-4 focus:border-b-custom-green focus:outline-none md:w-9/12" placeholder="Message" rows="5" required></textarea>
+                <div className="flex justify-end">
+                  <button type="submit" className="mt-10 block w-fit border-b-2 border-custom-green pb-2 text-center uppercase hover:cursor-pointer hover:text-custom-green md:mx-0">
+                    Send message
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <img src={rings} className="absolute bottom-4 h-16 w-48 md:-left-16 md:h-24 md:w-72" alt="Ring image" />
+      </section>
     </main>
   );
 }

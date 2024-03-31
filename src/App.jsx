@@ -30,27 +30,27 @@ export default function App() {
           <div className="relative z-50 flex flex-col  items-center justify-between py-5 text-custom-dark dark:text-white max-sm:space-y-5 md:flex-row">
             <div className="text-3xl font-bold capitalize ">Abbas Sher</div>
             <div className="flex items-center">
-              <button onClick={() => setDarkMode(!darkMode)} className="mr-10">
+              <button onClick={() => setDarkMode(!darkMode)} className="mr-10 hover:text-custom-green">
                 {themeToggleIcon}
               </button>
               <ul className="flex items-center gap-x-10">
                 <li>
-                  <a href="">
+                  <a href="https://github.com/Abbassher55" className="hover:text-custom-green">
                     <BsGithub className="text-xl" />
                   </a>
                 </li>
                 <li>
-                  <a href="">
+                  <a href="https://www.linkedin.com/in/abbas-sher/" target="_blank" className="hover:text-custom-green">
                     <BsLinkedin className="text-xl" />
                   </a>
                 </li>
                 <li>
-                  <a href="">
+                  <a href="https://twitter.com/" target="_blank" className="hover:text-custom-green">
                     <BsTwitter className="text-xl" />
                   </a>
                 </li>
                 <li>
-                  <a href="">
+                  <a href="https://www.frontendmentor.io/profile/Abbassher55" target="_blank" className="hover:text-custom-green">
                     <SiFrontendmentor className="text-xl" />
                   </a>
                 </li>
@@ -142,7 +142,7 @@ export default function App() {
       </section>
       {/* Contact Section*/}
       <section className="relative dark:bg-custom-dark dark:text-white">
-        <div className="container py-12 md:py-28">
+        <div className="container pt-12 md:pt-28">
           <div className="flex flex-col items-start gap-4 md:flex-row">
             <div className="w-full md:w-1/2">
               <h3 className="heading-xl capitalize">contact</h3>
@@ -161,9 +161,45 @@ export default function App() {
               </form>
             </div>
           </div>
+          <hr className="mt-12 dark:bg-white md:mt-20" />
         </div>
         <img src={rings} className="absolute bottom-4 h-16 w-48 md:-left-16 md:h-24 md:w-72" alt="Ring image" />
       </section>
+      {/* Footer Section*/}
+
+      <footer className="dark:bg-custom-dark dark:text-white">
+        <div className="container py-10">
+          <div className="flex flex-col items-center gap-4 md:flex-row md:justify-between">
+            <div className="md:w-1/2">
+              <h1 className="text-3xl font-bold capitalize ">Abbas Sher</h1>
+            </div>
+            <div className="md:w-1/2">
+              <ul className="flex items-center justify-end gap-x-10">
+                <li>
+                  <a href="https://github.com/Abbassher55" target="_blank" className="hover:text-custom-green">
+                    <BsGithub className="text-xl" />
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/in/abbas-sher/" target="_blank" className="hover:text-custom-green">
+                    <BsLinkedin className="text-xl" />
+                  </a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/" target="_blank" className="hover:text-custom-green">
+                    <BsTwitter className="text-xl" />
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.frontendmentor.io/profile/Abbassher55" target="_blank" className="hover:text-custom-green">
+                    <SiFrontendmentor className="text-xl" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
     </main>
   );
 }

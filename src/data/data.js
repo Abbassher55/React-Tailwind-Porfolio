@@ -86,12 +86,12 @@ export const learn_technologies = [
   {
     id: 1,
     title: "html",
-    experience: "4 years of experience",
+    experience: "2 years of experience",
   },
   {
     id: 2,
     title: "css",
-    experience: "4 years of experience",
+    experience: "2 years of experience",
   },
   {
     id: 3,

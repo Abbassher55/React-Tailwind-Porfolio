@@ -101,7 +101,7 @@ export const learn_technologies = [
   {
     id: 4,
     title: "Bootstrap",
-    experience: "2 years of experience",
+    experience: "3 years of experience",
   },
   {
     id: 5,

@@ -112,4 +112,9 @@ export const learn_technologies = [
     title: "react",
     experience: "1 year experience",
   },
+  {
+    id: 7,
+    title: "Tailwind CSS",
+    experience: "1 year experience",
+  },
 ];

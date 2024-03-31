@@ -56,6 +56,7 @@ export const projects = [
   {
     id: 5,
     desktopImage: saidCart,
+    mobImage: saidCart,
     github: "https://github.com/Abbassher55/saidcart-new",
     liveSite: "https://abbas-shop-design.netlify.app/",
     title: "Said cart ( Ecommerce store )",

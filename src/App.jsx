@@ -120,7 +120,7 @@ export default function App() {
                 <div className="single-project flex flex-col">
                   <div className="project-image group relative overflow-hidden border border-custom-gray dark:border-white">
                     <img src={project.desktopImage} className="hidden h-80 w-full object-cover transition-all duration-500 group-hover:scale-125 md:block" alt="Project image" />
-                    <img src={project.mobImage} className="block w-full object-cover transition-all duration-500 group-hover:scale-125 md:hidden" alt="Project image" />
+                    <img src={project.mobImage} className="block h-52 w-full object-cover transition-all duration-500 group-hover:scale-125 md:hidden" alt="Project image" />
                     <div className="absolute left-0 top-0 flex h-full w-full flex-col items-center justify-center space-y-10 bg-black  opacity-0 transition-all duration-500 group-hover:cursor-pointer group-hover:opacity-75">
                       <a href={project.liveSite} target="_blank" className="border-b-2 border-custom-green pb-2 uppercase  text-white hover:cursor-pointer hover:text-custom-green">
                         view project
@@ -131,11 +131,11 @@ export default function App() {
                     </div>
                   </div>
                   <div className="project-name heading-md mt-5 uppercase">{project.title}</div>
-                  <div className="project-technolgies mt-3 uppercase">
+                  <div className="project-technolgies mt-3 flex flex-wrap uppercase">
                     {project.technologies.map((technology) => (
-                      <span className="me-3" key={technology}>
+                      <div className="me-3" key={technology}>
                         {technology}
-                      </span>
+                      </div>
                     ))}
                   </div>
                 </div>

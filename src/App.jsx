@@ -5,9 +5,7 @@ import { BsGithub } from "react-icons/bs";
 import { BsLinkedin } from "react-icons/bs";
 import { BsTwitter } from "react-icons/bs";
 import { SiFrontendmentor } from "react-icons/si";
-import desktopDeveloperImg from "../assets/images/image-profile-desktop.webp";
-import tabletDeveloperImg from "../assets/images/image-profile-tablet.webp";
-import mobileDeveloperImg from "../assets/images/image-profile-mobile.webp";
+import desktopDeveloperImg from "../assets/images/profile.png";
 import rings from "../assets/images/pattern-rings.svg";
 import circle from "../assets/images/pattern-circle.svg";
 
@@ -78,9 +76,7 @@ export default function App() {
               </a>
             </div>
             <div className="relative md:w-1/3">
-              <img src={desktopDeveloperImg} className="hidden h-96 md:absolute md:-left-28 md:-top-96 lg:block lg:h-[600px]" alt="Developer image" />
-              <img src={tabletDeveloperImg} className="hidden h-96 md:max-lg:block lg:h-[600px]" alt="Developer image" />
-              <img src={mobileDeveloperImg} className="hidden h-96 max-md:block lg:h-[600px]" alt="Developer image" />
+              <img src={desktopDeveloperImg} className="h-96 border border-custom-green md:absolute md:-top-52 lg:-left-28 lg:-top-72 lg:h-[550px]" alt="Developer image" />
               <img src={circle} className="absolute left-72 top-2/3 -translate-x-1/2 md:left-0 md:top-64 lg:-left-28 lg:top-16" alt="Developer image" />
             </div>
           </div>

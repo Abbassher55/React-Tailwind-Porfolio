@@ -146,7 +146,7 @@ export default function App() {
           <div className="flex flex-col items-start gap-4 md:flex-row">
             <div className="w-full md:w-1/2">
               <h3 className="heading-xl capitalize">contact</h3>
-              <p className="mt-5 max-w-md text-custom-gray md:mt-9">I would love to hear about your project and how I could help. Please fill in the form, and I’ll get back to you as soon as possible.</p>
+              <p className="mt-5 max-w-md dark:text-custom-gray md:mt-9">I would love to hear about your project and how I could help. Please fill in the form, and I’ll get back to you as soon as possible.</p>
             </div>
             <div className="w-full md:w-1/2">
               <form className="flex flex-col items-center md:items-end">

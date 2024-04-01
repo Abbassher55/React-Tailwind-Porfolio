@@ -4,7 +4,7 @@ import socialLink from "../../assets/images/social-links.jpg";
 import productPreviewCard from "../../assets/images/product-preview-card.jpg";
 import threeCards from "../../assets/images/three-cards.jpg";
 import saidCart from "../../assets/images/said-cart.png";
-import naqshi from "../../assets/images/naqshi.png";
+// import naqshi from "../../assets/images/naqshi.png";
 import perfumes from "../../assets/images/perfumes-wesbite.png";
 
 export const projects = [
@@ -62,15 +62,15 @@ export const projects = [
     title: "Said cart ( Ecommerce store )",
     technologies: ["HTML", "CSS", "Bootstrap", "javascript", "jqeury", "sass"],
   },
-  {
-    id: 6,
-    desktopImage: naqshi,
-    mobImage: naqshi,
-    github: "https://github.com/Abbassher55/jaama_paizar",
-    liveSite: "https://encoders-store.netlify.app/",
-    title: "Naqshi clone",
-    technologies: ["HTML", "CSS", "Bootstrap", "javascript", "jqeury"],
-  },
+  // {
+  //   id: 6,
+  //   desktopImage: naqshi,
+  //   mobImage: naqshi,
+  //   github: "https://github.com/Abbassher55/jaama_paizar",
+  //   liveSite: "https://encoders-store.netlify.app/",
+  //   title: "Naqshi clone",
+  //   technologies: ["HTML", "CSS", "Bootstrap", "javascript", "jqeury"],
+  // },
   {
     id: 7,
     desktopImage: perfumes,

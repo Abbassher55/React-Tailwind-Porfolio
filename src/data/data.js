@@ -6,6 +6,7 @@ import threeCards from "../../assets/images/three-cards.jpg";
 import saidCart from "../../assets/images/said-cart.png";
 // import naqshi from "../../assets/images/naqshi.png";
 import perfumes from "../../assets/images/perfumes-wesbite.png";
+import manageImage from "../../assets/images/manage-landing-page.jpg";
 
 export const projects = [
   {
@@ -79,6 +80,15 @@ export const projects = [
     liveSite: "https://jassarperfumes.com/",
     title: "Jassar perfumes",
     technologies: ["HTML", "CSS", "Bootstrap", "javascript", "jqeury", "(With Arabic version)"],
+  },
+  {
+    id: 8,
+    desktopImage: manageImage,
+    mobImage: manageImage,
+    github: "https://github.com/Abbassher55/manage_landing_page",
+    liveSite: "https://abbassher55.github.io/manage_landing_page/",
+    title: "Manage Landing Page",
+    technologies: ["HTML", "CSS", "Tailwind CSS"],
   },
 ];
 

@@ -7,6 +7,7 @@ import saidCart from "../../assets/images/said-cart.png";
 // import naqshi from "../../assets/images/naqshi.png";
 import perfumes from "../../assets/images/perfumes-wesbite.png";
 import manageImage from "../../assets/images/manage-landing-page.jpg";
+import socialMediaDashboard from "../../assets/images/social-media-dashboard.jpg";
 
 export const projects = [
   {
@@ -89,6 +90,15 @@ export const projects = [
     liveSite: "https://abbassher55.github.io/manage_landing_page/",
     title: "Manage Landing Page",
     technologies: ["HTML", "CSS", "Tailwind CSS"],
+  },
+  {
+    id: 8,
+    desktopImage: socialMediaDashboard,
+    mobImage: socialMediaDashboard,
+    github: "https://github.com/Abbassher55/Social-media-dashboard-with-tailwind-css",
+    liveSite: "https://abbassher55.github.io/Social-media-dashboard-with-tailwind-css/",
+    title: "Social media dashboard",
+    technologies: ["HTML", "CSS", "Javascript", "Tailwind CSS"],
   },
 ];
 

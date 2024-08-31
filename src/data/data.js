@@ -4,6 +4,7 @@ import socialLink from "../../assets/images/social-links.jpg";
 import productPreviewCard from "../../assets/images/product-preview-card.jpg";
 import threeCards from "../../assets/images/three-cards.jpg";
 import saidCart from "../../assets/images/said-cart.png";
+import productList from "../../assets/images/product-list.jpg";
 // import naqshi from "../../assets/images/naqshi.png";
 import perfumes from "../../assets/images/perfumes-wesbite.png";
 import manageImage from "../../assets/images/manage-landing-page.jpg";
@@ -17,7 +18,7 @@ export const projects = [
     github: "https://github.com/Abbassher55/bookmark-project",
     liveSite: "https://abbassher55.github.io/bookmark-project/",
     title: "Bookmark landing page",
-    technologies: ["HTML", "CSS", "tailwind", "react"],
+    technologies: ["HTML", "CSS", "tailwind CSS", "react"],
   },
   {
     id: 2,
@@ -26,7 +27,7 @@ export const projects = [
     github: "https://github.com/Abbassher55/recipe-page",
     liveSite: "https://abbassher55.github.io/recipe-page/dist/index.html",
     title: "Recipe detail page",
-    technologies: ["HTML", "CSS", "tailwind"],
+    technologies: ["HTML", "CSS", "tailwind CSS"],
   },
   {
     id: 3,
@@ -35,7 +36,7 @@ export const projects = [
     github: "https://github.com/Abbassher55/tailwind-social-links-profile",
     liveSite: "https://abbassher55.github.io/tailwind-social-links-profile/",
     title: "Social links profile",
-    technologies: ["HTML", "CSS", "tailwind"],
+    technologies: ["HTML", "CSS", "tailwind CSS"],
   },
   {
     id: 4,
@@ -44,7 +45,7 @@ export const projects = [
     github: "https://github.com/Abbassher55/product-preview-card-component-tailwind-css",
     liveSite: "https://abbassher55.github.io/product-preview-card-component-tailwind-css/",
     title: "Product preview card",
-    technologies: ["HTML", "CSS", "tailwind"],
+    technologies: ["HTML", "CSS", "tailwind CSS"],
   },
   {
     id: 4,
@@ -53,7 +54,7 @@ export const projects = [
     github: "https://github.com/Abbassher55/3-Column-preview-card-component",
     liveSite: "https://abbassher55.github.io/3-Column-preview-card-component/",
     title: "3 columns card",
-    technologies: ["HTML", "CSS", "tailwind"],
+    technologies: ["HTML", "CSS", "tailwind CSS"],
   },
   {
     id: 5,
@@ -73,6 +74,15 @@ export const projects = [
   //   title: "Naqshi clone",
   //   technologies: ["HTML", "CSS", "Bootstrap", "javascript", "jqeury"],
   // },
+  {
+    id: 6,
+    desktopImage: productList,
+    mobImage: productList,
+    github: "https://github.com/Abbassher55/product-list-with-cart-tailwind-and-js",
+    liveSite: "https://tailwind-product-list-with-cart.netlify.app/",
+    title: "Prouct List with cart",
+    technologies: ["HTML", "CSS", "Tailwind CSS", "javascript"],
+  },
   {
     id: 7,
     desktopImage: perfumes,

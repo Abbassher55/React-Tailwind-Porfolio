@@ -5,14 +5,23 @@ import productPreviewCard from "../../assets/images/product-preview-card.jpg";
 import threeCards from "../../assets/images/three-cards.jpg";
 import saidCart from "../../assets/images/said-cart.png";
 import productList from "../../assets/images/product-list.jpg";
-// import naqshi from "../../assets/images/naqshi.png";
 import perfumes from "../../assets/images/perfumes-wesbite.png";
 import manageImage from "../../assets/images/manage-landing-page.jpg";
 import socialMediaDashboard from "../../assets/images/social-media-dashboard.jpg";
 
 export const projects = [
+  // {
+  //   id: 6,
+  //   desktopImage: naqshi,
+  //   mobImage: naqshi,
+  //   github: "https://github.com/Abbassher55/jaama_paizar",
+  //   liveSite: "https://encoders-store.netlify.app/",
+  //   title: "Naqshi clone",
+  //   technologies: ["HTML", "CSS", "Bootstrap", "javascript", "jqeury"],
+  // },
   {
     id: 1,
+    level: "intermediate",
     desktopImage: bookmarkImg,
     mobImage: bookmarkImg,
     github: "https://github.com/Abbassher55/bookmark-project",
@@ -22,6 +31,7 @@ export const projects = [
   },
   {
     id: 2,
+    level: "beginner",
     desktopImage: recipeImg,
     mobImage: recipeImg,
     github: "https://github.com/Abbassher55/recipe-page",
@@ -31,6 +41,7 @@ export const projects = [
   },
   {
     id: 3,
+    level: "beginner",
     desktopImage: socialLink,
     mobImage: socialLink,
     github: "https://github.com/Abbassher55/tailwind-social-links-profile",
@@ -42,6 +53,7 @@ export const projects = [
     id: 4,
     desktopImage: productPreviewCard,
     mobImage: productPreviewCard,
+    level: "beginner",
     github: "https://github.com/Abbassher55/product-preview-card-component-tailwind-css",
     liveSite: "https://abbassher55.github.io/product-preview-card-component-tailwind-css/",
     title: "Product preview card",
@@ -51,6 +63,7 @@ export const projects = [
     id: 4,
     desktopImage: threeCards,
     mobImage: threeCards,
+    level: "beginner",
     github: "https://github.com/Abbassher55/3-Column-preview-card-component",
     liveSite: "https://abbassher55.github.io/3-Column-preview-card-component/",
     title: "3 columns card",
@@ -58,6 +71,7 @@ export const projects = [
   },
   {
     id: 5,
+    level: "advanced",
     desktopImage: saidCart,
     mobImage: saidCart,
     github: "https://github.com/Abbassher55/saidcart-new",
@@ -65,17 +79,10 @@ export const projects = [
     title: "Said cart ( Ecommerce store )",
     technologies: ["HTML", "CSS", "Bootstrap", "javascript", "jqeury", "sass"],
   },
-  // {
-  //   id: 6,
-  //   desktopImage: naqshi,
-  //   mobImage: naqshi,
-  //   github: "https://github.com/Abbassher55/jaama_paizar",
-  //   liveSite: "https://encoders-store.netlify.app/",
-  //   title: "Naqshi clone",
-  //   technologies: ["HTML", "CSS", "Bootstrap", "javascript", "jqeury"],
-  // },
+
   {
     id: 6,
+    level: "junior",
     desktopImage: productList,
     mobImage: productList,
     github: "https://github.com/Abbassher55/product-list-with-cart-tailwind-and-js",
@@ -94,6 +101,7 @@ export const projects = [
   },
   {
     id: 8,
+    level: "intermediate",
     desktopImage: manageImage,
     mobImage: manageImage,
     github: "https://github.com/Abbassher55/manage_landing_page",
@@ -102,7 +110,8 @@ export const projects = [
     technologies: ["HTML", "CSS", "Tailwind CSS"],
   },
   {
-    id: 8,
+    id: 9,
+    level: "junior",
     desktopImage: socialMediaDashboard,
     mobImage: socialMediaDashboard,
     github: "https://github.com/Abbassher55/Social-media-dashboard-with-tailwind-css",

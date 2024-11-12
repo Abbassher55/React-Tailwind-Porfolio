@@ -8,8 +8,9 @@ import { SiFrontendmentor } from "react-icons/si";
 import desktopDeveloperImg from "../assets/images/profile.png";
 import rings from "../assets/images/pattern-rings.svg";
 import circle from "../assets/images/pattern-circle.svg";
+import Projects from "./components/Projects";
 
-import { projects, learn_technologies } from "./data/data";
+import { learn_technologies } from "./data/data";
 
 export default function App() {
   const [darkMode, setDarkMode] = useState(true);
@@ -100,46 +101,7 @@ export default function App() {
         </div>
         <img src={rings} className="absolute -right-20 top-3/4 h-16 w-48 md:top-40 md:h-24 md:w-72" alt="Ring image" />
       </section>
-      {/* Projects Section*/}
-      <section className="dark:bg-custom-dark dark:text-white">
-        <div className="container py-12 md:py-28">
-          <div className="flex items-end justify-between">
-            <h3 className="heading-xl capitalize">projects</h3>
-            <a href="#contact_form" className="w-fit border-b-2 border-custom-green hover:cursor-pointer hover:text-custom-green md:mx-0">
-              Contact me
-            </a>
-          </div>
-          {/* Projects Cards*/}
-          <div className="mt-10 grid gap-20 md:mt-16 md:grid-cols-2">
-            {projects.map((project) => (
-              <>
-                <div className="single-project flex flex-col">
-                  <div className="project-image group relative overflow-hidden border border-custom-gray dark:border-white">
-                    <img src={project.desktopImage} className="hidden h-80 w-full object-cover transition-all duration-500 group-hover:scale-125 md:block" alt="Project image" />
-                    <img src={project.mobImage} className="block h-52 w-full object-cover transition-all duration-500 group-hover:scale-125 md:hidden" alt="Project image" />
-                    <div className="absolute left-0 top-0 flex h-full w-full flex-col items-center justify-center space-y-10 bg-black  opacity-0 transition-all duration-500 group-hover:cursor-pointer group-hover:opacity-75">
-                      <a href={project.liveSite} target="_blank" className="border-b-2 border-custom-green pb-2 uppercase  text-white hover:cursor-pointer hover:text-custom-green">
-                        view project
-                      </a>
-                      <a href={project.github} target="_blank" className="border-b-2 border-custom-green pb-2 uppercase  text-white hover:cursor-pointer hover:text-custom-green">
-                        view Code
-                      </a>
-                    </div>
-                  </div>
-                  <div className="project-name heading-md mt-5 uppercase">{project.title}</div>
-                  <div className="project-technolgies mt-3 flex flex-wrap uppercase">
-                    {project.technologies.map((technology) => (
-                      <div className="me-3" key={technology}>
-                        {technology}
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </>
-            ))}
-          </div>
-        </div>
-      </section>
+      <Projects />
       {/* Contact Section*/}
       <section className="relative dark:bg-custom-dark dark:text-white">
         <div className="container pt-12 md:pt-28">

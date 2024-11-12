@@ -7,6 +7,7 @@ import saidCart from "../../assets/images/said-cart.png";
 import productList from "../../assets/images/product-list.jpg";
 import perfumes from "../../assets/images/perfumes-wesbite.png";
 import manageImage from "../../assets/images/manage-landing-page.jpg";
+import photosnap from "../../assets/images/photosnap.png";
 import socialMediaDashboard from "../../assets/images/social-media-dashboard.jpg";
 
 export const projects = [
@@ -27,7 +28,7 @@ export const projects = [
     github: "https://github.com/Abbassher55/bookmark-project",
     liveSite: "https://abbassher55.github.io/bookmark-project/",
     title: "Bookmark landing page",
-    technologies: ["HTML", "CSS", "tailwind CSS", "react"],
+    technologies: ["HTML", "tailwind CSS", "react"],
   },
   {
     id: 2,
@@ -60,7 +61,7 @@ export const projects = [
     technologies: ["HTML", "CSS", "tailwind CSS"],
   },
   {
-    id: 4,
+    id: 5,
     desktopImage: threeCards,
     mobImage: threeCards,
     level: "beginner",
@@ -69,17 +70,6 @@ export const projects = [
     title: "3 columns card",
     technologies: ["HTML", "CSS", "tailwind CSS"],
   },
-  {
-    id: 5,
-    level: "advanced",
-    desktopImage: saidCart,
-    mobImage: saidCart,
-    github: "https://github.com/Abbassher55/saidcart-new",
-    liveSite: "https://abbas-shop-design.netlify.app/",
-    title: "Said cart ( Ecommerce store )",
-    technologies: ["HTML", "CSS", "Bootstrap", "javascript", "jqeury", "sass"],
-  },
-
   {
     id: 6,
     level: "junior",
@@ -92,6 +82,7 @@ export const projects = [
   },
   {
     id: 7,
+    level: "advanced",
     desktopImage: perfumes,
     mobImage: perfumes,
     github: "#",
@@ -118,6 +109,26 @@ export const projects = [
     liveSite: "https://abbassher55.github.io/Social-media-dashboard-with-tailwind-css/",
     title: "Social media dashboard",
     technologies: ["HTML", "CSS", "Javascript", "Tailwind CSS"],
+  },
+  {
+    id: 10,
+    level: "advanced",
+    desktopImage: photosnap,
+    mobImage: photosnap,
+    github: "https://github.com/Abbassher55/photosnap-react-website",
+    liveSite: "https://photosnap-react.netlify.app/",
+    title: "PhotoSnap",
+    technologies: ["HTML", "Tailwind CSS", "React"],
+  },
+  {
+    id: 11,
+    level: "advanced",
+    desktopImage: saidCart,
+    mobImage: saidCart,
+    github: "https://github.com/Abbassher55/saidcart-new",
+    liveSite: "https://abbas-shop-design.netlify.app/",
+    title: "Said cart ( Ecommerce store )",
+    technologies: ["HTML", "CSS", "Bootstrap", "javascript", "jqeury", "sass"],
   },
 ];
 
